@@ -53,7 +53,7 @@ public class Basket implements java.io.Serializable{
 
 	public BigDecimal calculateTotal(){//okreslamy wartosc koszyka
 		BigDecimal total = BigDecimal.ZERO;
-		for(BasketItem lineItem : this.getLinesItems()){
+		for(BasketItem lineItem : this.getLinesItems()){//liczymy wartosc calkowia w tej petli
 			total = total.add(lineItem.getPrice().multiply(new BigDecimal((lineItem.getQuantity()))));
 		}
 		return  total;
