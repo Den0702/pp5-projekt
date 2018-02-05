@@ -2,7 +2,7 @@ package pl.dzmats.sales;
 
 import java.math.BigDecimal;
 
-public class BasketItem {
+public class BasketItem {//umieszczamy tu produkt, ktory bedziemy wykorzystywac w naszym koszyku
 
     private Product product;
     private Integer quantity;
